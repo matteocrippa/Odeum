@@ -49,7 +49,7 @@ public class OdeumPlayerView: UIView {
         control.delegate = self
         return control
     }()
-    public internal(set) lazy var spinner: UIActivityIndicatorView = .init(style: .white)
+    public internal(set) lazy var spinner: UIActivityIndicatorView = .init(style: .large)
     lazy var tapGestureRecognizer: UITapGestureRecognizer = {
         let gesture = UITapGestureRecognizer(target: self, action: #selector(didTap(_:)))
         gesture.cancelsTouchesInView = false
